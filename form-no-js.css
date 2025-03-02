@@ -12,14 +12,6 @@
     --accent-color: #ff5733;
 }
 
-[data-theme="dark"] {
-    --primary-color: #222;
-    --secondary-color: #444;
-    --background-color: #121212;
-    --text-color: #a9a27f;
-    --accent-color: #ffcc00;
-}
-
 body {
     font-family: 'Poppins', Arial, sans-serif;
     background-color: var(--background-color);
@@ -348,7 +340,6 @@ textarea {
     border: 1px solid var(--secondary-color);
     border-radius: 4px;
     font-size: 1rem;
-    transition: background-color 0.3s ease-in-out;
 }
 
 textarea {
@@ -378,27 +369,10 @@ output {
 
 #error-message {
     color: red;
-    font-size: 0.9rem;
-    font-weight: bold;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
 }
 
 #info-message {
     color: green;
-    font-size: 0.9rem;
-    font-weight: bold;
-    margin-top: 5px;
-    transition: color 0.3s ease-in-out;
-}
-
-.flash-error {
-    animation: flash 0.3s ease-in-out;
-}
-
-@keyframes flash {
-    0% { background-color: rgba(255, 0, 0, 0.5); }
-    100% { background-color: transparent; }
 }
 
 input:required,
